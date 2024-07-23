@@ -1,0 +1,31 @@
+/** マーキーさせたい部分 */
+.simple-marquee {
+  overflow: hidden;
+}
+
+.simple-marquee > div > div {
+  transform: translateX(100%);
+  animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+  0% {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+.simple-marquee.bg-red {
+  background-color: red;
+}
+.simple-marquee.bg-green {
+  background-color: green;
+}
+
+.simple-marquee.bg-blue {
+  background-color: blue;
+}
