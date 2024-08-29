@@ -253,5 +253,17 @@
         "variationName": "contentFragmentVariation"
       }
     ]
+  },
+  {
+    "id": "embed",
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "embed",
+        "label": "Embed",
+        "value": ""
+      }
+    ]
   }
 ]
