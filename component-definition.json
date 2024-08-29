@@ -147,7 +147,8 @@
                   "name": "Quote",
                   "model": "quote",
                   "quote": "<p>Think, McFly! Think!</p>",
-                  "author": "Biff Tannen"
+                  "author": "Biff Tannen",
+                  "tags": "tags here"
                 }
               }
             }
@@ -163,7 +164,8 @@
                 "template": {
                   "name": "Simple Marquee",
                   "model": "simpleMarquee",
-                  "marqueeText": "marquee text goes here"
+                  "marqueeText": "marquee text goes here",
+                  "cf": ""
                 }
               }
             }

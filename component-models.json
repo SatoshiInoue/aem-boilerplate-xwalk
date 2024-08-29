@@ -202,6 +202,13 @@
         "name": "author",
         "label": "Author",
         "value": ""
+      },
+      {
+        "component": "aem-tag",
+        "label": "AEM Tag Picker",
+        "name": "tags",
+        "valueType": "string",
+        "value": ""
       }
     ]
   },
@@ -240,7 +247,7 @@
       },
       {
         "component": "aem-content-fragment",
-        "name": "picker",
+        "name": "cf",
         "label": "Content Fragment Picker",
         "valueType": "string",
         "variationName": "contentFragmentVariation"
