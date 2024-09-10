@@ -246,11 +246,10 @@
         ]
       },
       {
-        "component": "aem-content-fragment",
-        "name": "cf",
-        "label": "Content Fragment Picker",
-        "valueType": "string",
-        "variationName": "contentFragmentVariation"
+        "component": "boolean",
+        "label": "Boolean",
+        "name": "boolean",
+        "valueType": "boolean"
       }
     ]
   },
