@@ -163,9 +163,9 @@
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
                   "name": "Simple Marquee",
+                  "key-value": true,
                   "model": "simpleMarquee",
-                  "marqueeText": "marquee text goes here",
-                  "cf": ""
+                  "marqueeText": "marquee text goes here"
                 }
               }
             }
