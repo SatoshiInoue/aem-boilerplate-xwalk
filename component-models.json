@@ -277,12 +277,6 @@
             "value": "bg-blue"
           }
         ]
-      },
-      {
-        "component": "boolean",
-        "label": "Boolean",
-        "name": "boolean",
-        "valueType": "boolean"
       }
     ]
   },
