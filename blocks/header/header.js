@@ -130,7 +130,6 @@ export default async function decorate(block) {
     'headerjs decorate - window location pathname: ' + window.location.pathname
   );
   console.log('headerjs decorate - window hash: ' + window.hash);
-  // const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
   let navPath;
   if (window.location.pathname.includes('/en/')) navPath = '/en/nav';
   else navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
