@@ -1,5 +1,9 @@
 [
   {
+    "id": "page-metadata",
+    "fields": []
+  },
+  {
     "id": "title",
     "fields": [
       {
