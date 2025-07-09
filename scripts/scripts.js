@@ -114,6 +114,17 @@ async function loadEager(doc) {
 }
 
 /**
+ *  Ulitity function
+ */
+function stringEndsWithAny(str, endingsArray) {
+  return endingsArray.some((ending) => str.endsWith(ending));
+}
+/**
+ *   paths not to add header/footer
+ */
+const WHITELIST_PATHS = ['/nav', '/nav.html', '/footer', '/footer.html'];
+
+/**
  * Loads everything that doesn't need to be delayed.
  * @param {Element} doc The container element
  */
@@ -125,9 +136,10 @@ async function loadLazy(doc) {
   const element = hash ? doc.getElementById(hash.substring(1)) : false;
   if (hash && element) element.scrollIntoView();
 
-  loadHeader(doc.querySelector('header'));
-  loadFooter(doc.querySelector('footer'));
-
+  if (!stringEndsWithAny(window.location.pathname, WHITELIST_PATHS))
+    loadHeader(doc.querySelector('header'));
+  if (!stringEndsWithAny(window.location.pathname, WHITELIST_PATHS))
+    loadFooter(doc.querySelector('footer'));
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();
 }
