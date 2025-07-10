@@ -9,10 +9,6 @@
   height: 200px;
 }
 
-.teaser.block.right {
-  text-align: right;
-}
-
 /* foreground container, flex (text + spacer), always on top */
 .teaser.block > .foreground {
   position: relative;
